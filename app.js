@@ -78,8 +78,8 @@ const fetchPosts = async () => {
 }
 
 const displayPost = (posted) => {
-    posted.forEach((datas, time) => {
-        setTimeout(() => {
+    posted.forEach(datas => {
+       
             const cardContainer = document.getElementById('post-container');
             const div = document.createElement('div');
             div.innerHTML = `  
@@ -115,17 +115,20 @@ const displayPost = (posted) => {
                                 <i class="fa-regular fa-clock"></i>
                                 <p>${datas.posted_time} min</p>
                             </div>
-                            <div id="btn-email" class="items-end">
-                                <img src="./images/email 1.svg" alt="">
+                            <div onclick="click()" id="btn-email" class="items-end">
+                                <img src="./images/email.svg" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>`;
+            </div>`
 
             cardContainer.appendChild(div);
-        }, time * 2000);
+        
     });
+}
+const click = () =>{
+    console.log('click')
 }
 const handleSearch =() =>{
   const searchField = document.getElementById('cat-1')
@@ -181,10 +184,10 @@ const handleSearch =() =>{
         const res = await fetch('https://openapi.programming-hero.com/api/retro-forum/latest-posts')
         const data = await res.json()
         const post = data;
-        console.log(post);
+        // console.log(post);
     
         post.forEach(posts => {
-            console.log(posts);
+            // console.log(posts);
     
             const cardContainer = document.getElementById('latest-container')
             
@@ -220,6 +223,13 @@ const handleSearch =() =>{
             cardContainer.appendChild(div)
         });
     }; 
+//  const toggelLoadingSpinner = () => {
+//     const loadingSpinner = document.getElementById('loading-spinner')
+//     loadingSpinner.classList.remove('hidden')
+//  }
+//  toggelLoadingSpinner();
+
+
 fetchPosts();    
 loadLatestPost();
 

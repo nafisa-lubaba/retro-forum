@@ -40,7 +40,7 @@
                                     <div class="dropdown dropdown-hover">
                                         <div tabindex="0" role="button" class="btn m-1">
 
-                                            <img src="./images/Frame.svg" alt="">
+                                            <img src="./images/frame.svg" alt="">
 
                                         </div>
                                         <ul tabindex="0"
@@ -52,7 +52,7 @@
                                     <div class="dropdown dropdown-hover">
                                         <div tabindex="0" role="button" class="btn m-1">
 
-                                            <img src="./images/Frame (1).svg" alt="">
+                                            <img src="./images/frame(1).svg" alt="">
 
                                         </div>
                                         <ul tabindex="0"
@@ -64,7 +64,7 @@
                                     <div class="dropdown dropdown-hover">
                                         <div tabindex="0" role="button" class="btn m-1">
 
-                                            <img src="./images/Frame (2).svg" alt="">
+                                            <img src="./images/frame(2).svg" alt="">
 
                                         </div>
                                         <ul tabindex="0"
@@ -76,7 +76,7 @@
                                     <div class="dropdown dropdown-hover">
                                         <div tabindex="0" role="button" class="btn m-1">
 
-                                            <img src="./images/Frame (3).svg" alt="">
+                                            <img src="./images/frame(3).svg" alt="">
 
                                         </div>
                                         <ul tabindex="0"
@@ -101,7 +101,7 @@
                         <div class="dropdown dropdown-hover">
                             <div tabindex="0" role="button" class="btn m-1">
 
-                                <img src="./images/Frame.svg" alt="">
+                                <img src="./images/frame.svg" alt="">
 
                             </div>
                             <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
@@ -112,7 +112,7 @@
                         <div class="dropdown dropdown-hover">
                             <div tabindex="0" role="button" class="btn m-1">
 
-                                <img src="./images/Frame (1).svg" alt="">
+                                <img src="./images/frame(1).svg" alt="">
 
                             </div>
                             <ul tabindex="0"
@@ -124,7 +124,7 @@
                         <div class="dropdown dropdown-hover">
                             <div tabindex="0" role="button" class="btn m-1">
 
-                                <img src="./images/Frame (2).svg" alt="">
+                                <img src="./images/frame(2).svg" alt="">
 
                             </div>
                             <ul tabindex="0"
@@ -136,7 +136,7 @@
                         <div class="dropdown dropdown-hover">
                             <div tabindex="0" role="button" class="btn m-1">
 
-                                <img src="./images/Frame (3).svg" alt="">
+                                <img src="./images/frame(3).svg" alt="">
 
                             </div>
                             <ul tabindex="0"
@@ -154,7 +154,7 @@
         </div>
 
 
-        <!-- aaaaaaaaaaaa -->
+
 
 
     </header>
@@ -172,7 +172,8 @@
                     </p>
                     <label class="input input-bordered rounded-3xl flex items-center gap-2">
                         <input id="search-field" type="text" class="grow" placeholder="Search here anything" />
-                        <button onclick=" handleSearch()" class="btn btn-primary bg-[#797dfc] text-white border-none rounded-3xl my-4 px-6 ">Sign
+                        <button onclick=" handleSearch()"
+                            class="btn btn-primary bg-[#797dfc] text-white border-none rounded-3xl my-4 px-6 ">Sign
                             in</button>
                     </label>
 
@@ -215,20 +216,30 @@
                 </div>
             </div>
 
-            <section class="flex gap-6">
-                <div id="post-container" class="flex flex-col gap-4"></div>
-                <div class="flex  bg-gray-200 px-5 py-10 rounded-2xl gap-5">
-                    <div class="flex gap-8 ">
-                        <h1 class="text-xl">Title</h1>
-                       
-                        <div id="" class="flex gap-2">
-                            <i class="fa-solid fa-check-double" style="color: #07bb76;"></i>
-                            <p>Mark as read</p>
+            <section>
+                <div id="loading-spinner" class="text-center my-40">
+                    <span class="loading loading-spinner loading-lg hidden"></span>
+                </div>
+                <div  class="flex gap-6">
+
+
+                    <div id="post-container" class="flex flex-col gap-4"></div>
+
+
+                    <div class="flex  bg-gray-200 px-5 py-10 rounded-2xl gap-5">
+                        <div class="flex gap-8 ">
+                            <h1 class="text-xl">Title</h1>
+
+                            <div id="" class="flex gap-2">
+                                <i class="fa-solid fa-check-double" style="color: #07bb76;"></i>
+                                <p>Mark as read</p>
+                            </div>
                         </div>
                     </div>
+
                 </div>
             </section>
-           
+
 
         </section>
         <section class="mt-20 bg-[#12132d] flex px-16 py-20 rounded-xl mb-7">
@@ -256,34 +267,35 @@
                 </div>
             </div>
             <div id="latest-container" class="flex gap-4">
-              
+
             </div>
         </section>
     </main>
 
 
-    
 
 
-        <footer class="mt-10 footer footer-center p-10 bg-[#f6f6f7] text-primary-content text-black">
-            <aside>
-    
-                <p class="font-bold text-3xl">
-                    ReTro</p>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
-                    Latin literature from 45 BC</p>
-    
-            </aside>
-            <nav>
-                <div>
-                   <img src="./images/Social.svg" alt="">
 
-                    
-                </div>
-                <p class="mt-3">Copyright © 2024 - All right reserved</p></p>
-            </nav>
-        </footer>
-    
+    <footer class="mt-10 footer footer-center p-10 bg-[#f6f6f7] text-primary-content text-black">
+        <aside>
+
+            <p class="font-bold text-3xl">
+                ReTro</p>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+                Latin literature from 45 BC</p>
+
+        </aside>
+        <nav>
+            <div>
+                <img src="./images/Social.svg" alt="">
+
+
+            </div>
+            <p class="mt-3">Copyright © 2024 - All right reserved</p>
+            </p>
+        </nav>
+    </footer>
+
 
     <script src="/app.js"></script>
     <!-- <script src="/index.js"></script> -->
