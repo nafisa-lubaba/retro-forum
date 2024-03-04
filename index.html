@@ -7,27 +7,233 @@
     <title>Assigment-o6</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/3e2f7bd081.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
     <style>
-        .font-mulish{
+        .font-mulish {
             font-family: "Mulish", sans-serif;
         }
-
     </style>
 </head>
 
 <body>
-    <header>
+    <header class="container mx-auto w-[90%] mt-5">
+        <div>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <div class="navbar-center hidden lg:flex">
+                                <ul class="menu menu-horizontal px-1">
+                                    <div class="dropdown dropdown-hover">
+                                        <div tabindex="0" role="button" class="btn m-1">
+
+                                            <img src="./images/Frame.svg" alt="">
+
+                                        </div>
+                                        <ul tabindex="0"
+                                            class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+
+                                            <li><a>Home</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown dropdown-hover">
+                                        <div tabindex="0" role="button" class="btn m-1">
+
+                                            <img src="./images/Frame (1).svg" alt="">
+
+                                        </div>
+                                        <ul tabindex="0"
+                                            class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                                            <li><a>Edit</a></li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown dropdown-hover">
+                                        <div tabindex="0" role="button" class="btn m-1">
+
+                                            <img src="./images/Frame (2).svg" alt="">
+
+                                        </div>
+                                        <ul tabindex="0"
+                                            class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                                            <li><a>Add</a></li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown dropdown-hover">
+                                        <div tabindex="0" role="button" class="btn m-1">
+
+                                            <img src="./images/Frame (3).svg" alt="">
+
+                                        </div>
+                                        <ul tabindex="0"
+                                            class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+
+                                            <li><a></a></li>
+                                        </ul>
+                                    </div>
+                                </ul>
+                            </div>
+
+
+                        </ul>
+
+                    </div>
+                    <div>
+                        <img class="w-[70%]" src="./images/logo.png" alt="">
+                    </div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <div class="dropdown dropdown-hover">
+                            <div tabindex="0" role="button" class="btn m-1">
+
+                                <img src="./images/Frame.svg" alt="">
+
+                            </div>
+                            <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+
+                                <li><a>Home</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown dropdown-hover">
+                            <div tabindex="0" role="button" class="btn m-1">
+
+                                <img src="./images/Frame (1).svg" alt="">
+
+                            </div>
+                            <ul tabindex="0"
+                                class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                                <li><a>Edit</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="dropdown dropdown-hover">
+                            <div tabindex="0" role="button" class="btn m-1">
+
+                                <img src="./images/Frame (2).svg" alt="">
+
+                            </div>
+                            <ul tabindex="0"
+                                class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                                <li><a>Add</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="dropdown dropdown-hover">
+                            <div tabindex="0" role="button" class="btn m-1">
+
+                                <img src="./images/Frame (3).svg" alt="">
+
+                            </div>
+                            <ul tabindex="0"
+                                class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+
+                                <li><a>Other</a></li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn bg-[#797DFC] text-white">Sign In</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- aaaaaaaaaaaa -->
+
 
     </header>
-    <main>
+    <main class="container mx-auto w-[90%] mt-5">
+        <section class="bg-[#12132d] bg-[url(images/bgbanner.png)] bg-center bg-no-repeat rounded-2xl">
+            <div class="px-24 py-24">
+                <div class="flex flex-col gap-4">
+                    <h1 class="text-white text-5xl font-bold">Welcome to the <br> <span
+                            class="text-[#797DFC]">Retro</span>Forum</h1>
+                    <p class="text-white">Share your favorite opinion and win and wp <br>forum coffee mug!</p>
+
+                </div>
+
+
+            </div>
+        </section>
+        <section class="text-center mt-20 mb-7">
+            <div class="flex flex-col items-center mb-10">
+                <h1 class="text-3xl">Let’s Discuss</h1>
+                <div class="w-[650px] text-center">
+                    <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing
+                        features allow for a streamlined .</p>
+                </div>
+            </div>
+
+            <section class="flex gap-6">
+                <div id="post-container" class="flex flex-col gap-4"></div>
+                <div class="flex  bg-gray-200 px-5 py-10 rounded-2xl gap-5">
+                    <div class="flex gap-8 ">
+                        <h1 class="text-xl">Title</h1>
+                        <div class="flex gap-2">
+                            <i class="fa-solid fa-check-double" style="color: #07bb76;"></i>
+                            <p>Mark as read</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+        <section class="mt-20 bg-[#12132d] flex px-16 py-20 rounded-xl mb-7">
+            <div class="flex flex-col justify-center gap-5">
+                <h3 class="text-3xl font-bold text-white">Join Our Forum</h3>
+                <div class="w-[550px]">
+                    <p class="text-white">Share your favorite opinion and win and wp forum coffee mug! Yes, you can run
+                        unit tests and view the results directly within the app. </p>
+                </div>
+                <div class="mt-5">
+                    <button class="btn btn-primary bg-[#797dfc] text-white border-none rounded-3xl"><span
+                            class="px-6">Registered Now</span></button>
+                </div>
+            </div>
+            <div>
+                <img src="./images/joinforum.png" alt="" srcset="">
+            </div>
+        </section>
+        <section class="mt-20">
+            <div class="flex flex-col items-center mb-10">
+                <h1 class="text-3xl">Latest Posts</h1>
+                <div class="w-[650px] text-center">
+                    <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing
+                        features allow for a streamlined .</p>
+                </div>
+            </div>
+            <div id="latest-container" class="flex gap-4">
+              
+            </div>
+        </section>
+    </main>
+
+
+    
+        </section>
+
 
     </main>
     <footer>
 
     </footer>
+    <script src="app.js"></script>
 
 </body>
 
