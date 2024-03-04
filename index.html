@@ -172,7 +172,7 @@
                     </p>
                     <label class="input input-bordered rounded-3xl flex items-center gap-2">
                         <input id="search-field" type="text" class="grow" placeholder="Search here anything" />
-                        <button onclick=" handleSearch()"
+                        <button id="b" onclick=" handleSearch()"
                             class="btn btn-primary bg-[#797dfc] text-white border-none rounded-3xl my-4 px-6 ">Sign
                             in</button>
                     </label>
@@ -217,23 +217,26 @@
             </div>
 
             <section>
-                <div id="loading-spinner" class="text-center my-40">
+                <div id="spinner-loader" class="text-center my-40">
                     <span class="loading loading-spinner loading-lg hidden"></span>
                 </div>
+              
                 <div  class="flex gap-6">
 
 
                     <div id="post-container" class="flex flex-col gap-4"></div>
 
 
-                    <div class="flex  bg-gray-200 px-5 py-10 rounded-2xl gap-5">
+                    <div class="  bg-gray-200 px-5 py-10 rounded-2xl gap-5">
                         <div class="flex gap-8 ">
                             <h1 class="text-xl">Title</h1>
-
-                            <div id="" class="flex gap-2">
+                            <div class="flex gap-2">
                                 <i class="fa-solid fa-check-double" style="color: #07bb76;"></i>
                                 <p>Mark as read</p>
                             </div>
+                        </div>
+                        <div id="title-contain" class="bg-white p-2 mt-3 mb-5 rounded-lg">
+    
                         </div>
                     </div>
 
