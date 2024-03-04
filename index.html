@@ -21,145 +21,72 @@
 
 <body>
     <header class="container mx-auto w-[90%] mt-5">
-        <div>
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-
-                        </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <div class="navbar-center hidden lg:flex">
-                                <ul class="menu menu-horizontal px-1">
-                                    <div class="dropdown dropdown-hover">
-                                        <div tabindex="0" role="button" class="btn m-1">
-
-                                            <img src="./images/frame.svg" alt="">
-
-                                        </div>
-                                        <ul tabindex="0"
-                                            class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-
-                                            <li><a>Home</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="dropdown dropdown-hover">
-                                        <div tabindex="0" role="button" class="btn m-1">
-
-                                            <img src="./images/frame(1).svg" alt="">
-
-                                        </div>
-                                        <ul tabindex="0"
-                                            class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-                                            <li><a>Edit</a></li>
-
-                                        </ul>
-                                    </div>
-                                    <div class="dropdown dropdown-hover">
-                                        <div tabindex="0" role="button" class="btn m-1">
-
-                                            <img src="./images/frame(2).svg" alt="">
-
-                                        </div>
-                                        <ul tabindex="0"
-                                            class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-                                            <li><a>Add</a></li>
-
-                                        </ul>
-                                    </div>
-                                    <div class="dropdown dropdown-hover">
-                                        <div tabindex="0" role="button" class="btn m-1">
-
-                                            <img src="./images/frame(3).svg" alt="">
-
-                                        </div>
-                                        <ul tabindex="0"
-                                            class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-
-                                            <li><a></a></li>
-                                        </ul>
-                                    </div>
-                                </ul>
-                            </div>
-
-
-                        </ul>
-
-                    </div>
-                    <div>
-                        <img class="w-[70%]" src="./images/logo.png" alt="">
-                    </div>
+        <div class="navbar bg-base-100 flex flex-col items-center sm:flex-row sm:justify-between">
+            <div class="flex-1 mb-3 sm:mb-0">
+                <a class="btn btn-ghost text-xl">Dooply</a>
+            </div>
+            <div class="flex flex-wrap items-center sm:flex-nowrap gap-3">
+                <div class="px-3 py-2 bg-slate-200 border-[1px] border-gray-400 rounded-full tooltip" data-tip="Home">
+                    <i class="fa-solid fa-house"></i>
                 </div>
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
-                        <div class="dropdown dropdown-hover">
-                            <div tabindex="0" role="button" class="btn m-1">
-
-                                <img src="./images/frame.svg" alt="">
-
-                            </div>
-                            <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-
-                                <li><a>Home</a></li>
-                            </ul>
-                        </div>
-                        <div class="dropdown dropdown-hover">
-                            <div tabindex="0" role="button" class="btn m-1">
-
-                                <img src="./images/frame(1).svg" alt="">
-
-                            </div>
-                            <ul tabindex="0"
-                                class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-                                <li><a>Edit</a></li>
-
-                            </ul>
-                        </div>
-                        <div class="dropdown dropdown-hover">
-                            <div tabindex="0" role="button" class="btn m-1">
-
-                                <img src="./images/frame(2).svg" alt="">
-
-                            </div>
-                            <ul tabindex="0"
-                                class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-                                <li><a>Add</a></li>
-
-                            </ul>
-                        </div>
-                        <div class="dropdown dropdown-hover">
-                            <div tabindex="0" role="button" class="btn m-1">
-
-                                <img src="./images/frame(3).svg" alt="">
-
-                            </div>
-                            <ul tabindex="0"
-                                class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-
-                                <li><a>Other</a></li>
-                            </ul>
-                        </div>
-                    </ul>
+                <div class="px-3 py-2 bg-slate-200 border-[1px] border-gray-400 rounded-full tooltip" data-tip="Edit">
+                    <i class="fa-solid fa-pen"></i>
                 </div>
-                <div class="navbar-end">
-                    <a class="btn bg-[#797DFC] text-white">Sign In</a>
+                <div class="px-3 py-2 bg-slate-200 border-[1px] border-gray-400 rounded-full tooltip" data-tip="Add">
+                    <i class="fa-solid fa-user-plus"></i>
                 </div>
+                <div class="px-3 py-2 bg-slate-200 border-[1px] border-gray-400 rounded-full tooltip" data-tip="Flag">
+                    <i class="fa-solid fa-flag"></i>
+                </div>
+            </div>
+            <div class=" my-4 lg:pl-3">
+                <button class="btn btn-primary bg-[#797dfc] text-white border-none rounded-3xl">Sign in</button>
             </div>
         </div>
 
 
 
 
-
     </header>
     <main class="container mx-auto w-[90%] mt-5">
-        <section class="bg-[#12132d] bg-[url(images/bgbanner.png)]  bg-no-repeat rounded-2xl">
+        <section class="bg-[#12132d] bg-[url(images/bgbanner.png)] bg-no-repeat rounded-2xl">
+            <div class="flex flex-col sm:flex-row justify-between px-4 md:px-8 lg:px-16 py-8 md:py-12 lg:py-24">
+                <div class="flex flex-col gap-4">
+                    <h1 class="text-lg sm:text-4xl text-white font-bold">
+                        Welcome to the <br><span class="bg-gradient-to-r text-transparent bg-clip-text from-indigo-400 to-indigo-700">Dooply</span> Forum
+                    </h1>
+                    <p class="text-white">
+                        Share your favorite opinion and win a forum coffee mug!
+                    </p>
+                    <label class="input input-bordered rounded-3xl flex items-center gap-2">
+                        <input id="search-field" type="text" class="grow" placeholder="Search here anything" />
+                        <button id="b" onclick="handleSearch()" class="btn btn-primary bg-[#797dfc] text-white border-none rounded-3xl my-4 px-6">Sign in</button>
+                    </label>
+                </div>
+                <div class="bg-white p-6 sm:p-10 rounded-2xl flex gap-8 list-none mt-4 sm:mt-0">
+                    <div class="flex flex-col gap-3">
+                        <li>Registered Users</li>
+                        <li>Forum</li>
+                        <li>Topics</li>
+                        <li>Replies</li>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <li>01</li>
+                        <li>05</li>
+                        <li>01</li>
+                        <li>01</li>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+
+        
+
+
+
+        <!-- <section class="bg-[#12132d] bg-[url(images/bgbanner.png)]  bg-no-repeat rounded-2xl">
             <div class="flex justify-between px-24 py-24">
                 <div class="flex flex-col gap-4">
                     <h1 class="text-4xl text-white font-bold">
@@ -194,7 +121,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- <section class="bg-[#12132d] bg-[url(images/bgbanner.png)] bg-center bg-no-repeat rounded-2xl">
             <div class="px-24 py-24">
                 <div class="flex flex-col gap-4">
@@ -207,24 +134,31 @@
 
             </div>
         </section> -->
-        <section class="text-center mt-20 mb-7">
-            <div class="flex flex-col items-center mb-10">
+        <section class="text-center mt-20 mb-4">
+            <!-- <div class="flex flex-col items-center mb-10">
                 <h1 class="text-3xl">Let’s Discuss</h1>
                 <div class="w-[650px] text-center">
                     <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing
                         features allow for a streamlined .</p>
                 </div>
+            </div> -->
+            <div class="flex flex-col items-center mb-10">
+                <h1 class="text-lg md:text-xl lg:text-4xl font-bold">Let’s Discuss</h1>
+                <div class="w-full md:w-[650px] lg:w-[800px] text-center mt-4 text-xl">
+                    <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+                </div>
             </div>
+            
 
             <section>
-                <div id="spinner-loader" class="text-center my-40">
-                    <span class="loading loading-spinner loading-lg hidden"></span>
+                <div id="spinner-loader" class="hidden">
+                    <span class="loading loading-spinner loading-lg"></span>
                 </div>
               
-                <div  class="flex gap-6">
+                <div  class="flex flex-col gap-4 justify-between lg:flex-row ">
 
 
-                    <div id="post-container" class="flex flex-col gap-4"></div>
+                    <div id="post-container" class="flex flex-col gap-4 lg:w-2/3"></div>
 
 
                     <div class="  bg-gray-200 px-5 py-10 rounded-2xl gap-5">
@@ -235,7 +169,10 @@
                                 <p>Mark as read</p>
                             </div>
                         </div>
-                        <div id="title-contain" class="bg-white p-2 mt-3 mb-5 rounded-lg">
+                       
+                        <div id="title-contain" class="bg-white space-y-4
+                        
+                        mt-3 mb-5 rounded-lg">
     
                         </div>
                     </div>
@@ -245,10 +182,10 @@
 
 
         </section>
-        <section class="mt-20 bg-[#12132d] flex px-16 py-20 rounded-xl mb-7">
+        <section class="mt-20 bg-[#12132d] flex flex-col lg:flex-row px-16 py-20 rounded-xl mb-5">
             <div class="flex flex-col justify-center gap-5">
                 <h3 class="text-3xl font-bold text-white">Join Our Forum</h3>
-                <div class="w-[550px]">
+                <div class="w-full">
                     <p class="text-white">Share your favorite opinion and win and wp forum coffee mug! Yes, you can run
                         unit tests and view the results directly within the app. </p>
                 </div>
@@ -257,19 +194,20 @@
                             class="px-6">Registered Now</span></button>
                 </div>
             </div>
+            
             <div>
                 <img src="./images/joinforum.png" alt="" srcset="">
             </div>
         </section>
         <section class="mt-20">
             <div class="flex flex-col items-center mb-10">
-                <h1 class="text-3xl">Latest Posts</h1>
-                <div class="w-[650px] text-center">
+                <h1 class="text-xl sm:text-3xl font-bold mb-3">Latest Posts</h1>
+                <div class=" w-full lg:w-[650px] text-center">
                     <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing
                         features allow for a streamlined .</p>
                 </div>
             </div>
-            <div id="latest-container" class="flex gap-4">
+            <div id="latest-container" class="grid grid-cols-1 lg:grid-cols-3 gap-4">
 
             </div>
         </section>
