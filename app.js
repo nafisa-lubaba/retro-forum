@@ -5,6 +5,8 @@ const fatchPosts = async () => {
     const post = data.posts;
     // console.log(post);
     displayPost(post);
+    
+
 }
 
 const displayPost = posts =>{
@@ -67,12 +69,15 @@ function handleClick(postTitle,postView) {
 
     const title = document.createElement('div');
     title.innerHTML = `
+    <div class="bg-white p-2 rounded-lg">
+
 
         <h1 class="text-base">${postTitle}</h1>
                         <div class="flex gap-3 items-center">
                             <i class="fa-regular fa-eye"></i>
                             <p>${postView}</p>
                         </div>
+                </div>
         `
             titleDiv.appendChild(title);
 }
@@ -94,6 +99,10 @@ const handleSearch = async () => {
     if (!searchText) return;
     const loaderSpinner = document.getElementById('spinner-loader');
     loaderSpinner.classList.remove('hidden'); 
+    await new Promise(resolve => setTimeout(resolve, 2000));
+
+   
+    
     try {
         const res = await fetch(`https://openapi.programming-hero.com/api/retro-forum/posts?category=${searchText}`);
         const data = await res.json();
