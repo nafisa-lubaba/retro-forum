@@ -4,7 +4,9 @@ const fatchPosts = async () => {
     const data = await res.json()
     const post = data.posts;
     // console.log(post);
-    displayPost(post);
+
+        displayPost(post);
+    
     
 
 }
@@ -13,6 +15,8 @@ const displayPost = posts =>{
     const divContainer = document.getElementById('post-container')
     divContainer.textContent =''
     posts.forEach(datas => {
+        let newTitle = datas.title;
+        let heading = newTitle.replace("'", "")
         // console.log(element);
               
        
@@ -51,7 +55,7 @@ const displayPost = posts =>{
                                             <p>${datas.posted_time} min</p>
                                         </div>
                                     </div>
-                                    <div onclick="handleClick('${datas.title}', ${datas.view_count})" id="btn" class="justify-end">
+                                    <div onclick="handleClick('${heading}', ${datas.view_count})" id="btn" class="justify-end">
                                         <img src="./images/email.jpg" alt="" class="w-6 h-6" rounded-lg bg-base-200" srcset="">
                                     </div>
                                 </div>
@@ -64,6 +68,10 @@ const displayPost = posts =>{
     });
 }
 function handleClick(postTitle,postView) {
+    const countnum = document.getElementById('countSpan');
+    let count = parseInt(countnum.innerText);
+    count++;
+    countnum.innerText = count;
     console.log(postTitle,postView);
     const titleDiv = document.getElementById('title-contain')
 
